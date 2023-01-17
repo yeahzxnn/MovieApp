@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Ui-0d-E7b">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="2z0-GQ-w1M">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Ui-0d-E7b" customClass="ViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ycE-LH-CJY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인배경" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-C6-S5z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIn-ye-Y4D" userLabel="kakaoLoginButton">
+                                <rect key="frame" x="51.666666666666657" y="725" width="311" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="2yW-ab-MGQ"/>
+                                    <constraint firstAttribute="height" constant="90" id="PIV-8R-nof"/>
+                                </constraints>
+                                <state key="normal" image="kakao_login_medium_wide"/>
+                                <connections>
+                                    <action selector="kakaoLoginButtonTouchUpInside:" destination="4Ui-0d-E7b" eventType="touchUpInside" id="YAe-Xk-4c7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNf-Fe-C2h" userLabel="profileImageView">
+                                <rect key="frame" x="54.666666666666657" y="625" width="98" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="FLO-Ad-jAF"/>
+                                    <constraint firstAttribute="height" constant="94" id="tTp-CA-PcR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A32-dN-oDc" userLabel="infoLabel">
+                                <rect key="frame" x="248.33333333333334" y="634.66666666666663" width="0.0" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IXH-FR-POd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DvM-Bu-1dZ"/>
+                        <constraints>
+                            <constraint firstItem="yNf-Fe-C2h" firstAttribute="centerY" secondItem="ycE-LH-CJY" secondAttribute="centerY" multiplier="1.5" id="DHF-HR-agC"/>
+                            <constraint firstItem="A32-dN-oDc" firstAttribute="centerY" secondItem="ycE-LH-CJY" secondAttribute="centerY" multiplier="1.45" id="FCZ-Fx-rfx"/>
+                            <constraint firstItem="kIn-ye-Y4D" firstAttribute="centerX" secondItem="DvM-Bu-1dZ" secondAttribute="centerX" id="Ltm-lD-RPA"/>
+                            <constraint firstAttribute="top" secondItem="xPS-C6-S5z" secondAttribute="top" id="P0F-dK-DZf"/>
+                            <constraint firstAttribute="leading" secondItem="xPS-C6-S5z" secondAttribute="leading" id="R7j-T3-Ei4"/>
+                            <constraint firstItem="xPS-C6-S5z" firstAttribute="bottom" secondItem="ycE-LH-CJY" secondAttribute="bottom" id="WBe-5a-fAh"/>
+                            <constraint firstAttribute="trailing" secondItem="xPS-C6-S5z" secondAttribute="trailing" id="cb2-sE-fhq"/>
+                            <constraint firstItem="kIn-ye-Y4D" firstAttribute="centerY" secondItem="DvM-Bu-1dZ" secondAttribute="centerY" multiplier="1.7" id="ewB-cb-igN"/>
+                            <constraint firstItem="yNf-Fe-C2h" firstAttribute="centerX" secondItem="ycE-LH-CJY" secondAttribute="centerX" multiplier="0.5" id="pX7-X8-MWB"/>
+                            <constraint firstItem="A32-dN-oDc" firstAttribute="centerX" secondItem="ycE-LH-CJY" secondAttribute="centerX" multiplier="1.2" id="qfD-L7-O3r"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="yNf-Fe-C2h" id="cQH-wV-s0F"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCf-nP-JY6" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-262.31884057971018" y="-479.46428571428567"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kakao_login_medium_wide" width="300" height="45"/>
+        <image name="로그인배경" width="1125" height="2247"/>
+    </resources>
 </document>
