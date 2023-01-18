@@ -5,27 +5,29 @@
 //  Created by 신예진 on 2023/01/17.
 //
 
-import Foundation
 import UIKit
-import KakaoSDKAuth
+import Alamofire
 import KakaoSDKUser
-import KakaoSDKCommon
-import SwiftUI
+import KakaoSDKUser
 
 class LogInViewController: UIViewController {
-
-    @IBOutlet weak var kakaoLoginButton: UIButton!
-    lazy var KakaoAuthVM : KakaoAuthVM = {kakaoLogin_tutorial.KakaoAuthVM() }()
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        kakaoLoginButton.setTitle("카카오 로그인", for:.normal)
-    
+      super.viewDidLoad()
     }
 
-    @IBAction func loginBtnTabpped(_ sender: UIButton) {
-        print("클릭됨")
-        KakaoAuthVM.handleKakaoLogin()
+    @IBAction func kakaoLoginTouched(_ sender: UIButton) {
+      UserApi.shared.loginWithKakaoAccount() { (oAuthToken, error) in
+        if let error = error {
+          print(error)
+        } else {
+          print("loginWithKakaoAccount success")
+            _ = oAuthToken
+          guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
+                  as? HomeViewController else { return }
+          vc.modalPresentationStyle = .fullScreen
+          self.present(vc, animated: true)
+        }
+      }
     }
-    
+        
 }
