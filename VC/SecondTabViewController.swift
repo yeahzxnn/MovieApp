@@ -7,9 +7,9 @@
 
 import Foundation
 import UIKit
-import NMapsMap
 import Alamofire
 import CoreLocation
+import NMapsMap
 
 class SecondTabViewController: UIViewController {
 
@@ -64,14 +64,14 @@ class SecondTabViewController: UIViewController {
   }
   
   func getMovieTheater() {
-    let url = "https://openapi.gg.go.kr/MovieScreening?key=160106c8bc17414aa011430a4721af96&Type=json&pSize=212"
+    let url = "https://openapi.gg.go.kr/MovieScreening?key=856297b3b7d7444dbc49d7bedcaaed68&Type=json&pSize=212"
     AF.request(url).responseJSON { (response) in
       switch response.result {
       case .success(let data):
         do {
           //print(data)
           let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
-          let json = try JSONDecoder().decode(Movie.self, from: jsonData)
+          let json = try JSONDecoder().decode(MovieScreening.self, from: jsonData)
           self.movieTheaters += json.MovieScreening[1].row ?? []
           self.setMovieTheaterMarker()
         } catch(let error) {

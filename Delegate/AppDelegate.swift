@@ -8,6 +8,9 @@
 import UIKit
 import KakaoSDKCommon
 import KakaoSDKAuth
+import NMapsMap
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nativeAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
         KakaoSDK.initSDK(appKey: nativeAppKey as! String)
         // Override point for customization after application launch.
+        
+        NMFAuthManager.shared().clientId = "YOUR_CLIENT_ID_HERE"
+        
         return true
     }
     

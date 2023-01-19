@@ -71,6 +71,18 @@ extension MovieChartViewController: PageboyViewControllerDataSource, TMBarDataSo
       return TMBarItem(title: "일별 순위")
     case 1:
       return TMBarItem(title: "주간 순위")
+    case 2:
+        return TMBarItem(title: "베스트 순위")
+    case 3:
+        return TMBarItem(title: "평점 높은 순위")
+    case 4:
+        return TMBarItem(title: "상영기간이 긴 순위")
+    case 5:
+        return TMBarItem(title: "평론가들이 사랑한 순위")
+    case 6:
+        return TMBarItem(title: "연령대별 인기 순위")
+    case 7:
+        return TMBarItem(title: "관람객들 투표로 뽑은 인기 순위")
     default:
       return TMBarItem(title: "page \(index)")
     }
