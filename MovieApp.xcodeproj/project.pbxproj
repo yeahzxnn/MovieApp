@@ -13,7 +13,6 @@
 		356162E229786A1B0003ADD2 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E129786A1B0003ADD2 /* FirstTabViewController.swift */; };
 		356162E429786A420003ADD2 /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E329786A420003ADD2 /* SecondTabViewController.swift */; };
 		356162E629786A640003ADD2 /* MovieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E529786A640003ADD2 /* MovieChartViewController.swift */; };
-		356162E829786A8A0003ADD2 /* DailyChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E729786A8A0003ADD2 /* DailyChartViewController.swift */; };
 		356162EA29786AA40003ADD2 /* WeeklyChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E929786AA40003ADD2 /* WeeklyChartViewController.swift */; };
 		356162EC29786AC30003ADD2 /* ThirdTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162EB29786AC30003ADD2 /* ThirdTabViewController.swift */; };
 		356162EE29786AE30003ADD2 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162ED29786AE30003ADD2 /* DetailMovieViewController.swift */; };
@@ -22,7 +21,6 @@
 		356162F529786B5D0003ADD2 /* WeeklyChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162F429786B5D0003ADD2 /* WeeklyChartCollectionViewCell.swift */; };
 		356162F729786B7A0003ADD2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162F629786B7A0003ADD2 /* SearchTableViewCell.swift */; };
 		356162F929786BAD0003ADD2 /* MovieScreening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162F829786BAD0003ADD2 /* MovieScreening.swift */; };
-		356162FB29786BBF0003ADD2 /* DailyChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162FA29786BBF0003ADD2 /* DailyChart.swift */; };
 		356162FD29786BDB0003ADD2 /* WeeklyChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162FC29786BDB0003ADD2 /* WeeklyChart.swift */; };
 		356162FF29786BF70003ADD2 /* SearchMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162FE29786BF70003ADD2 /* SearchMovie.swift */; };
 		3561630129786C0D0003ADD2 /* DetailMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561630029786C0D0003ADD2 /* DetailMovie.swift */; };
@@ -75,7 +73,6 @@
 		356162E129786A1B0003ADD2 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 		356162E329786A420003ADD2 /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
 		356162E529786A640003ADD2 /* MovieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieChartViewController.swift; sourceTree = "<group>"; };
-		356162E729786A8A0003ADD2 /* DailyChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChartViewController.swift; sourceTree = "<group>"; };
 		356162E929786AA40003ADD2 /* WeeklyChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChartViewController.swift; sourceTree = "<group>"; };
 		356162EB29786AC30003ADD2 /* ThirdTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabViewController.swift; sourceTree = "<group>"; };
 		356162ED29786AE30003ADD2 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +81,6 @@
 		356162F429786B5D0003ADD2 /* WeeklyChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChartCollectionViewCell.swift; sourceTree = "<group>"; };
 		356162F629786B7A0003ADD2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		356162F829786BAD0003ADD2 /* MovieScreening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScreening.swift; sourceTree = "<group>"; };
-		356162FA29786BBF0003ADD2 /* DailyChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChart.swift; sourceTree = "<group>"; };
 		356162FC29786BDB0003ADD2 /* WeeklyChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChart.swift; sourceTree = "<group>"; };
 		356162FE29786BF70003ADD2 /* SearchMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovie.swift; sourceTree = "<group>"; };
 		3561630029786C0D0003ADD2 /* DetailMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovie.swift; sourceTree = "<group>"; };
@@ -166,7 +162,6 @@
 				356162E129786A1B0003ADD2 /* FirstTabViewController.swift */,
 				356162E329786A420003ADD2 /* SecondTabViewController.swift */,
 				356162E529786A640003ADD2 /* MovieChartViewController.swift */,
-				356162E729786A8A0003ADD2 /* DailyChartViewController.swift */,
 				356162E929786AA40003ADD2 /* WeeklyChartViewController.swift */,
 				356162EB29786AC30003ADD2 /* ThirdTabViewController.swift */,
 				356162ED29786AE30003ADD2 /* DetailMovieViewController.swift */,
@@ -178,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				356162F829786BAD0003ADD2 /* MovieScreening.swift */,
-				356162FA29786BBF0003ADD2 /* DailyChart.swift */,
 				356162FC29786BDB0003ADD2 /* WeeklyChart.swift */,
 				356162FE29786BF70003ADD2 /* SearchMovie.swift */,
 				3561630029786C0D0003ADD2 /* DetailMovie.swift */,
@@ -529,7 +523,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356162FB29786BBF0003ADD2 /* DailyChart.swift in Sources */,
 				3561630129786C0D0003ADD2 /* DetailMovie.swift in Sources */,
 				356162F529786B5D0003ADD2 /* WeeklyChartCollectionViewCell.swift in Sources */,
 				356162FF29786BF70003ADD2 /* SearchMovie.swift in Sources */,
@@ -540,7 +533,6 @@
 				356162EA29786AA40003ADD2 /* WeeklyChartViewController.swift in Sources */,
 				356162EE29786AE30003ADD2 /* DetailMovieViewController.swift in Sources */,
 				356162E629786A640003ADD2 /* MovieChartViewController.swift in Sources */,
-				356162E829786A8A0003ADD2 /* DailyChartViewController.swift in Sources */,
 				356162FD29786BDB0003ADD2 /* WeeklyChart.swift in Sources */,
 				35A443A52976AB1D0038BFBB /* AppDelegate.swift in Sources */,
 				356162F129786B240003ADD2 /* ADCollectionViewCell.swift in Sources */,

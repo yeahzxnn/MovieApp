@@ -53,9 +53,9 @@ class SecondTabViewController: UIViewController {
   
   func setMovieTheaterMarker() {
     for movieTheater in movieTheaters {
-      if let lat = movieTheater.REFINE_WGS84_LAT {
-        if let lng = movieTheater.REFINE_WGS84_LOGT {
-          if let name = movieTheater.BIZPLC_NM {
+      if let lat = movieTheater.refineWgs84Lat {
+        if let lng = movieTheater.refineWgs84Logt {
+          if let name = movieTheater.bizplcNm {
             setMarker(lat: Double(lat) ?? 0, lng: Double(lng) ?? 0, name: name)
           }
         }
@@ -64,7 +64,7 @@ class SecondTabViewController: UIViewController {
   }
   
   func getMovieTheater() {
-    let url = "https://openapi.gg.go.kr/MovieScreening?key=856297b3b7d7444dbc49d7bedcaaed68&Type=json&pSize=212"
+    let url = "https://openapi.gg.go.kr/MovieScreening?key=856297b3b7d7444dbc49d7bedcaaed68&Type=json&pSize=30"
     AF.request(url).responseJSON { (response) in
       switch response.result {
       case .success(let data):
@@ -72,7 +72,7 @@ class SecondTabViewController: UIViewController {
           //print(data)
           let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
           let json = try JSONDecoder().decode(MovieScreening.self, from: jsonData)
-          self.movieTheaters += json.MovieScreening[1].row ?? []
+//            self.movieTheaters += json.MovieScreening[].row
           self.setMovieTheaterMarker()
         } catch(let error) {
           print(error.localizedDescription)

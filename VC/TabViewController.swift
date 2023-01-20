@@ -72,11 +72,11 @@ extension TabViewController: PageboyViewControllerDataSource, TMBarDataSource {
   func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
     switch index {
     case 0:
-      return TMBarItem(title: "홈")
+      return TMBarItem(title: "메인")
     case 1:
-      return TMBarItem(title: "지도")
+      return TMBarItem(title: "영화관위치")
     case 2:
-      return TMBarItem(title: "검색")
+      return TMBarItem(title: "영화검색")
     case 3:
         return TMBarItem(title: "마이메뉴")
     case 4:

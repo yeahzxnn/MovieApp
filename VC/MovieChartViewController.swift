@@ -24,11 +24,11 @@ class MovieChartViewController: TabmanViewController {
   }
     
   func setTabMan() {
-    guard let firstVC = storyboard?.instantiateViewController(withIdentifier: "dayChartVC")
-            as? DailyChartViewController else { return }
+//    guard let firstVC = storyboard?.instantiateViewController(withIdentifier: "dayChartVC")
+//            as? DailyChartViewController else { return }
     guard let secondVC = storyboard?.instantiateViewController(withIdentifier: "weekChartVC")
             as? WeeklyChartViewController else { return }
-    viewControllers.append(firstVC)
+//    viewControllers.append(firstVC)
     viewControllers.append(secondVC)
     
     self.dataSource = self
@@ -68,21 +68,17 @@ extension MovieChartViewController: PageboyViewControllerDataSource, TMBarDataSo
   func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
     switch index {
     case 0:
-      return TMBarItem(title: "일별 순위")
+      return TMBarItem(title: "# 박스오피스")
     case 1:
-      return TMBarItem(title: "주간 순위")
+      return TMBarItem(title: "# 상영예정")
     case 2:
-        return TMBarItem(title: "베스트 순위")
+        return TMBarItem(title: "# 돌바시네마")
     case 3:
-        return TMBarItem(title: "평점 높은 순위")
+        return TMBarItem(title: "# 단독")
     case 4:
-        return TMBarItem(title: "상영기간이 긴 순위")
+        return TMBarItem(title: "# 클소")
     case 5:
-        return TMBarItem(title: "평론가들이 사랑한 순위")
-    case 6:
-        return TMBarItem(title: "연령대별 인기 순위")
-    case 7:
-        return TMBarItem(title: "관람객들 투표로 뽑은 인기 순위")
+        return TMBarItem(title: "# 필소")
     default:
       return TMBarItem(title: "page \(index)")
     }
