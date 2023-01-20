@@ -20,4 +20,5 @@ struct MovieList: Codable {
   let movieNm: String
   let genreAlt: String
   let prdtYear: String
+    
 }

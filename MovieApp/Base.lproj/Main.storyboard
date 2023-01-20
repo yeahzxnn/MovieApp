@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GSf-pQ-Jms">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXC-N5-cdX">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,48 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In View Controller-->
-        <scene sceneID="2z0-GQ-w1M">
-            <objects>
-                <viewController storyboardIdentifier="LIVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Ui-0d-E7b" customClass="LogInViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ycE-LH-CJY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인배경" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-C6-S5z">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIn-ye-Y4D" userLabel="kakaoLoginButton">
-                                <rect key="frame" x="51.666666666666657" y="725" width="311" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="311" id="2yW-ab-MGQ"/>
-                                    <constraint firstAttribute="height" constant="90" id="PIV-8R-nof"/>
-                                </constraints>
-                                <state key="normal" image="kakao_login_medium_wide"/>
-                                <connections>
-                                    <action selector="kakaoLoginTouched:" destination="4Ui-0d-E7b" eventType="touchUpInside" id="XAa-QX-MIu"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="DvM-Bu-1dZ"/>
-                        <constraints>
-                            <constraint firstItem="kIn-ye-Y4D" firstAttribute="centerX" secondItem="DvM-Bu-1dZ" secondAttribute="centerX" id="Ltm-lD-RPA"/>
-                            <constraint firstAttribute="top" secondItem="xPS-C6-S5z" secondAttribute="top" id="P0F-dK-DZf"/>
-                            <constraint firstAttribute="leading" secondItem="xPS-C6-S5z" secondAttribute="leading" id="R7j-T3-Ei4"/>
-                            <constraint firstItem="xPS-C6-S5z" firstAttribute="bottom" secondItem="ycE-LH-CJY" secondAttribute="bottom" id="WBe-5a-fAh"/>
-                            <constraint firstAttribute="trailing" secondItem="xPS-C6-S5z" secondAttribute="trailing" id="cb2-sE-fhq"/>
-                            <constraint firstItem="kIn-ye-Y4D" firstAttribute="centerY" secondItem="DvM-Bu-1dZ" secondAttribute="centerY" multiplier="1.7" id="ewB-cb-igN"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dCf-nP-JY6" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1787" y="-534"/>
-        </scene>
         <!--Home View Controller-->
         <scene sceneID="xe1-aP-rgr">
             <objects>
-                <viewController storyboardIdentifier="homeVC" id="GSf-pQ-Jms" customClass="HomeViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GSf-pQ-Jms" customClass="HomeViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dUU-FP-m7u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +120,7 @@
         <!--First Tab View Controller-->
         <scene sceneID="shU-56-2xM">
             <objects>
-                <viewController storyboardIdentifier="firstTabVC" id="mVQ-7Y-3Tl" customClass="FirstTabViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstTabVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mVQ-7Y-3Tl" customClass="FirstTabViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HRN-GB-HLA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1031"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,40 +242,10 @@
             </objects>
             <point key="canvasLocation" x="-955.07246376811599" y="204.57589285714286"/>
         </scene>
-        <!--Second Tab View Controller-->
-        <scene sceneID="Bye-Rd-Qp3">
-            <objects>
-                <viewController storyboardIdentifier="secondTabVC" id="y57-Yb-xxb" customClass="SecondTabViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eNw-Dv-Qk2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaU-uc-Hnp" customClass="NMFMapView">
-                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="bNY-b6-kjc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="GaU-uc-Hnp" firstAttribute="leading" secondItem="bNY-b6-kjc" secondAttribute="leading" id="QmW-CC-LuR"/>
-                            <constraint firstItem="bNY-b6-kjc" firstAttribute="trailing" secondItem="GaU-uc-Hnp" secondAttribute="trailing" id="acr-tq-eyL"/>
-                            <constraint firstItem="bNY-b6-kjc" firstAttribute="bottom" secondItem="GaU-uc-Hnp" secondAttribute="bottom" id="r5L-2b-zwc"/>
-                            <constraint firstItem="GaU-uc-Hnp" firstAttribute="top" secondItem="bNY-b6-kjc" secondAttribute="top" constant="40" id="sU9-sO-i7D"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="mapView" destination="GaU-uc-Hnp" id="ak3-xc-1Rp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lem-w8-U17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1788" y="938"/>
-        </scene>
         <!--Third Tab View Controller-->
         <scene sceneID="Iov-eT-jx9">
             <objects>
-                <viewController storyboardIdentifier="thirdTabVC" id="FgE-h6-5C7" customClass="ThirdTabViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="thirdTabVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FgE-h6-5C7" customClass="ThirdTabViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sDo-3A-EV5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,7 +330,7 @@
         <!--Detail Movie View Controller-->
         <scene sceneID="xDK-Vg-JZt">
             <objects>
-                <viewController storyboardIdentifier="detailMovieVC" id="SYf-GR-Y3i" customClass="DetailMovieViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailMovieVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SYf-GR-Y3i" customClass="DetailMovieViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ceU-d6-RWN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -666,7 +598,7 @@
         <!--Daily Chart View Controller-->
         <scene sceneID="Mgl-TX-OAs">
             <objects>
-                <viewController storyboardIdentifier="dayChartVC" id="S26-dJ-IIa" customClass="DailyChartViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dayChartVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S26-dJ-IIa" customClass="DailyChartViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gS6-zA-Eyn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="464"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -765,7 +697,7 @@
         <!--Weekly Chart View Controller-->
         <scene sceneID="bvI-dc-JC8">
             <objects>
-                <viewController storyboardIdentifier="weekChartVC" id="5FC-tZ-Qhj" customClass="WeeklyChartViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="weekChartVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5FC-tZ-Qhj" customClass="WeeklyChartViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9qL-IC-OSN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="468"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -861,12 +793,83 @@
             </objects>
             <point key="canvasLocation" x="422" y="439"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="VDt-dE-v0E">
+            <objects>
+                <viewController id="vXC-N5-cdX" customClass="ViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UbI-vB-Fz7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인배경" translatesAutoresizingMaskIntoConstraints="NO" id="6n2-hm-Vwn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95R-kd-KR6">
+                                <rect key="frame" x="45" y="642.66666666666663" width="324" height="59"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="kakaoLogin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="kakaoLogin">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kakaoLoginTouched:" destination="vXC-N5-cdX" eventType="touchUpInside" id="o6d-tr-xy7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ppj-pC-SWo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="6n2-hm-Vwn" secondAttribute="top" id="274-aB-nvT"/>
+                            <constraint firstAttribute="trailing" secondItem="6n2-hm-Vwn" secondAttribute="trailing" id="NUL-Ws-bI8"/>
+                            <constraint firstItem="6n2-hm-Vwn" firstAttribute="leading" secondItem="UbI-vB-Fz7" secondAttribute="leading" id="Zl8-9E-yqi"/>
+                            <constraint firstItem="95R-kd-KR6" firstAttribute="centerX" secondItem="UbI-vB-Fz7" secondAttribute="centerX" id="fsW-Cb-4go"/>
+                            <constraint firstItem="6n2-hm-Vwn" firstAttribute="bottom" secondItem="UbI-vB-Fz7" secondAttribute="bottom" id="gSQ-Px-b5c"/>
+                            <constraint firstItem="95R-kd-KR6" firstAttribute="centerY" secondItem="UbI-vB-Fz7" secondAttribute="centerY" multiplier="1.5" id="iLS-tN-28q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTP-DT-OOt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1717.3913043478262" y="-519.64285714285711"/>
+        </scene>
+        <!--Second Tab View Controller-->
+        <scene sceneID="X52-mq-Gwa">
+            <objects>
+                <viewController storyboardIdentifier="secondTabVC" id="yne-Ii-Pkb" customClass="SecondTabViewController" customModule="MovieApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TYh-TK-Rxu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-EC-2Rm" customClass="NMFMapView">
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jpU-8t-lBq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kUl-EC-2Rm" firstAttribute="leading" secondItem="jpU-8t-lBq" secondAttribute="leading" id="9P8-vt-fLC"/>
+                            <constraint firstItem="jpU-8t-lBq" firstAttribute="trailing" secondItem="kUl-EC-2Rm" secondAttribute="trailing" id="ASi-ll-Tjd"/>
+                            <constraint firstItem="jpU-8t-lBq" firstAttribute="bottom" secondItem="kUl-EC-2Rm" secondAttribute="bottom" id="ESb-oj-bJl"/>
+                            <constraint firstItem="kUl-EC-2Rm" firstAttribute="top" secondItem="jpU-8t-lBq" secondAttribute="top" constant="40" id="OVW-8Z-NIp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="kUl-EC-2Rm" id="eAY-0r-t5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43k-Lg-ltL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1843" y="938"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cart.badge.plus" catalog="system" width="128" height="103"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="ellipsis.circle" catalog="system" width="128" height="123"/>
-        <image name="kakao_login_medium_wide" width="300" height="45"/>
+        <image name="kakaoLogin" width="300" height="45"/>
         <image name="myMovieSmall" width="960" height="485"/>
         <image name="noImage" width="1665" height="2048"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>

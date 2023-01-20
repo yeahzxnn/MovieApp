@@ -2,14 +2,14 @@
 //  SecondTabViewController.swift
 //  MovieApp
 //
-//  Created by 신예진 on 2023/01/19.
+//  Created by 신예진 on 2023/01/21.
 //
 
 import Foundation
 import UIKit
+import NMapsMap
 import Alamofire
 import CoreLocation
-import NMapsMap
 
 class SecondTabViewController: UIViewController {
 
@@ -27,13 +27,15 @@ class SecondTabViewController: UIViewController {
     locationManager.delegate = self
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
     locationManager.requestWhenInUseAuthorization()
-    
-    if CLLocationManager.locationServicesEnabled() {
-      print("위치 서비스 on")
-      locationManager.startUpdatingLocation()
-    } else {
-      print("위치 서비스 off")
-    }
+      
+    DispatchQueue.global().async {
+        if CLLocationManager.locationServicesEnabled() {
+          print("위치 서비스 on")
+            self.locationManager.startUpdatingLocation()
+        } else {
+          print("위치 서비스 off")
+        }
+      }
   }
 
   // MARK: - Methods
@@ -53,7 +55,7 @@ class SecondTabViewController: UIViewController {
   
   func setMovieTheaterMarker() {
     for movieTheater in movieTheaters {
-      if let lat = movieTheater.refineWgs84Lat {
+      if let lat = movieTheater.refineWgs84Lat{
         if let lng = movieTheater.refineWgs84Logt {
           if let name = movieTheater.bizplcNm {
             setMarker(lat: Double(lat) ?? 0, lng: Double(lng) ?? 0, name: name)
@@ -64,7 +66,7 @@ class SecondTabViewController: UIViewController {
   }
   
   func getMovieTheater() {
-    let url = "https://openapi.gg.go.kr/MovieScreening?key=856297b3b7d7444dbc49d7bedcaaed68&Type=json&pSize=30"
+    let url = "https://openapi.gg.go.kr/MovieScreening?key=ce892e04c95cefd2f26f5dfdd9912c68&Type=json&pSize=212"
     AF.request(url).responseJSON { (response) in
       switch response.result {
       case .success(let data):
@@ -72,7 +74,8 @@ class SecondTabViewController: UIViewController {
           //print(data)
           let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
           let json = try JSONDecoder().decode(MovieScreening.self, from: jsonData)
-//            self.movieTheaters += json.MovieScreening[].row
+            self.movieTheaters += json.row
+//            MovieScreening[1].row ?? []
           self.setMovieTheaterMarker()
         } catch(let error) {
           print(error.localizedDescription)

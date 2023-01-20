@@ -8,9 +8,8 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct Movie: Codable {
     let movieScreening: [MovieScreening]?
-
     enum CodingKeys: String, CodingKey {
         case movieScreening = "MovieScreening"
     }
@@ -19,7 +18,7 @@ struct Welcome: Codable {
 // MARK: - MovieScreening
 struct MovieScreening: Codable {
     let head: [Head]?
-    let row: [Row]?
+    let row: [Row]
 }
 
 // MARK: - Head
@@ -79,11 +78,13 @@ struct Row: Codable {
     let sngrumRlCnt, firefacltYn, totGamemchnCnt, existngOtfgmbizIndutypeNm: JSONNull?
     let provsnGameswNm: JSONNull?
 
+    
 //마커 찍을 때 사용하는 거
 //     let BIZPLC_NM: String?
 //     let REFINE_WGS84_LOGT: String?
 //     let REFINE_WGS84_LAT: String?
 //
+    
     enum CodingKeys: String, CodingKey {
         case sigunCD = "SIGUN_CD"
         case sigunNm = "SIGUN_NM"
@@ -154,11 +155,11 @@ class JSONNull: Codable, Hashable {
     public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
         return true
     }
-
+    
     public var hashValue: Int {
         return 0
     }
-
+    
     public init() {}
 
     public required init(from decoder: Decoder) throws {

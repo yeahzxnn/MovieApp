@@ -16,11 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let nativeAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
-        KakaoSDK.initSDK(appKey: nativeAppKey as! String)
-        // Override point for customization after application launch.
+        KakaoSDK.initSDK(appKey: "e629d2e25d04706f8998a0ba0530473b")
         
-        NMFAuthManager.shared().clientId = "YOUR_CLIENT_ID_HERE"
+        NMFAuthManager.shared().clientId = "ejfmpd3atk"
         
         return true
     }

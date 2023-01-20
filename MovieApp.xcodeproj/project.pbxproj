@@ -11,7 +11,6 @@
 		356162CA2977FB2D0003ADD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162C92977FB2D0003ADD2 /* HomeViewController.swift */; };
 		356162E0297869F00003ADD2 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162DF297869F00003ADD2 /* TabViewController.swift */; };
 		356162E229786A1B0003ADD2 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E129786A1B0003ADD2 /* FirstTabViewController.swift */; };
-		356162E429786A420003ADD2 /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E329786A420003ADD2 /* SecondTabViewController.swift */; };
 		356162E629786A640003ADD2 /* MovieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E529786A640003ADD2 /* MovieChartViewController.swift */; };
 		356162EA29786AA40003ADD2 /* WeeklyChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162E929786AA40003ADD2 /* WeeklyChartViewController.swift */; };
 		356162EC29786AC30003ADD2 /* ThirdTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162EB29786AC30003ADD2 /* ThirdTabViewController.swift */; };
@@ -24,9 +23,10 @@
 		356162FD29786BDB0003ADD2 /* WeeklyChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162FC29786BDB0003ADD2 /* WeeklyChart.swift */; };
 		356162FF29786BF70003ADD2 /* SearchMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356162FE29786BF70003ADD2 /* SearchMovie.swift */; };
 		3561630129786C0D0003ADD2 /* DetailMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561630029786C0D0003ADD2 /* DetailMovie.swift */; };
+		35616305297B16390003ADD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35616304297B16390003ADD2 /* ViewController.swift */; };
+		35616307297B1A5C0003ADD2 /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35616306297B1A5C0003ADD2 /* SecondTabViewController.swift */; };
 		35A443A52976AB1D0038BFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A443A42976AB1D0038BFBB /* AppDelegate.swift */; };
 		35A443A72976AB1D0038BFBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A443A62976AB1D0038BFBB /* SceneDelegate.swift */; };
-		35A443A92976AB1D0038BFBB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A443A82976AB1D0038BFBB /* LogInViewController.swift */; };
 		35A443AC2976AB1D0038BFBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A443AA2976AB1D0038BFBB /* Main.storyboard */; };
 		35A443AE2976AB1F0038BFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A443AD2976AB1F0038BFBB /* Assets.xcassets */; };
 		35A443B12976AB1F0038BFBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A443AF2976AB1F0038BFBB /* LaunchScreen.storyboard */; };
@@ -71,7 +71,6 @@
 		356162C92977FB2D0003ADD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		356162DF297869F00003ADD2 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		356162E129786A1B0003ADD2 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
-		356162E329786A420003ADD2 /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
 		356162E529786A640003ADD2 /* MovieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieChartViewController.swift; sourceTree = "<group>"; };
 		356162E929786AA40003ADD2 /* WeeklyChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChartViewController.swift; sourceTree = "<group>"; };
 		356162EB29786AC30003ADD2 /* ThirdTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabViewController.swift; sourceTree = "<group>"; };
@@ -84,10 +83,11 @@
 		356162FC29786BDB0003ADD2 /* WeeklyChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChart.swift; sourceTree = "<group>"; };
 		356162FE29786BF70003ADD2 /* SearchMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovie.swift; sourceTree = "<group>"; };
 		3561630029786C0D0003ADD2 /* DetailMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovie.swift; sourceTree = "<group>"; };
+		35616304297B16390003ADD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35616306297B1A5C0003ADD2 /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
 		35A443A12976AB1D0038BFBB /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A443A42976AB1D0038BFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A443A62976AB1D0038BFBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35A443A82976AB1D0038BFBB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		35A443AB2976AB1D0038BFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35A443AD2976AB1F0038BFBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A443B02976AB1F0038BFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,15 +156,15 @@
 		356162C82977FA7C0003ADD2 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				35A443A82976AB1D0038BFBB /* LogInViewController.swift */,
 				356162C92977FB2D0003ADD2 /* HomeViewController.swift */,
 				356162DF297869F00003ADD2 /* TabViewController.swift */,
 				356162E129786A1B0003ADD2 /* FirstTabViewController.swift */,
-				356162E329786A420003ADD2 /* SecondTabViewController.swift */,
 				356162E529786A640003ADD2 /* MovieChartViewController.swift */,
+				35616306297B1A5C0003ADD2 /* SecondTabViewController.swift */,
 				356162E929786AA40003ADD2 /* WeeklyChartViewController.swift */,
 				356162EB29786AC30003ADD2 /* ThirdTabViewController.swift */,
 				356162ED29786AE30003ADD2 /* DetailMovieViewController.swift */,
+				35616304297B16390003ADD2 /* ViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -524,19 +524,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3561630129786C0D0003ADD2 /* DetailMovie.swift in Sources */,
+				35616305297B16390003ADD2 /* ViewController.swift in Sources */,
 				356162F529786B5D0003ADD2 /* WeeklyChartCollectionViewCell.swift in Sources */,
 				356162FF29786BF70003ADD2 /* SearchMovie.swift in Sources */,
 				356162CA2977FB2D0003ADD2 /* HomeViewController.swift in Sources */,
 				356162F329786B3E0003ADD2 /* DailyChartCollectionViewCell.swift in Sources */,
 				356162EC29786AC30003ADD2 /* ThirdTabViewController.swift in Sources */,
-				35A443A92976AB1D0038BFBB /* LogInViewController.swift in Sources */,
 				356162EA29786AA40003ADD2 /* WeeklyChartViewController.swift in Sources */,
 				356162EE29786AE30003ADD2 /* DetailMovieViewController.swift in Sources */,
+				35616307297B1A5C0003ADD2 /* SecondTabViewController.swift in Sources */,
 				356162E629786A640003ADD2 /* MovieChartViewController.swift in Sources */,
 				356162FD29786BDB0003ADD2 /* WeeklyChart.swift in Sources */,
 				35A443A52976AB1D0038BFBB /* AppDelegate.swift in Sources */,
 				356162F129786B240003ADD2 /* ADCollectionViewCell.swift in Sources */,
-				356162E429786A420003ADD2 /* SecondTabViewController.swift in Sources */,
 				356162E229786A1B0003ADD2 /* FirstTabViewController.swift in Sources */,
 				356162F729786B7A0003ADD2 /* SearchTableViewCell.swift in Sources */,
 				356162E0297869F00003ADD2 /* TabViewController.swift in Sources */,
