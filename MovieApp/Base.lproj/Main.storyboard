@@ -805,7 +805,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95R-kd-KR6">
-                                <rect key="frame" x="45" y="642.66666666666663" width="324" height="59"/>
+                                <rect key="frame" x="45" y="754.66666666666663" width="324" height="59"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="kakaoLogin">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -826,7 +826,7 @@
                             <constraint firstItem="6n2-hm-Vwn" firstAttribute="leading" secondItem="UbI-vB-Fz7" secondAttribute="leading" id="Zl8-9E-yqi"/>
                             <constraint firstItem="95R-kd-KR6" firstAttribute="centerX" secondItem="UbI-vB-Fz7" secondAttribute="centerX" id="fsW-Cb-4go"/>
                             <constraint firstItem="6n2-hm-Vwn" firstAttribute="bottom" secondItem="UbI-vB-Fz7" secondAttribute="bottom" id="gSQ-Px-b5c"/>
-                            <constraint firstItem="95R-kd-KR6" firstAttribute="centerY" secondItem="UbI-vB-Fz7" secondAttribute="centerY" multiplier="1.5" id="iLS-tN-28q"/>
+                            <constraint firstItem="95R-kd-KR6" firstAttribute="centerY" secondItem="UbI-vB-Fz7" secondAttribute="centerY" multiplier="1.75" id="iLS-tN-28q"/>
                         </constraints>
                     </view>
                 </viewController>

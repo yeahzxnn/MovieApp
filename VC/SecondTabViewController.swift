@@ -38,7 +38,7 @@ class SecondTabViewController: UIViewController {
       }
   }
 
-  // MARK: - Methods
+  // MARK: - 마커 설정Methods
   func setMarker(lat: Double, lng: Double, name: String) {
     let marker = NMFMarker()
     marker.iconImage = NMF_MARKER_IMAGE_BLACK
@@ -65,13 +65,14 @@ class SecondTabViewController: UIViewController {
     }
   }
   
+  //영화관 장소 받아오기
   func getMovieTheater() {
     let url = "https://openapi.gg.go.kr/MovieScreening?key=ce892e04c95cefd2f26f5dfdd9912c68&Type=json&pSize=212"
     AF.request(url).responseJSON { (response) in
       switch response.result {
       case .success(let data):
         do {
-          //print(data)
+          print(data)
           let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
           let json = try JSONDecoder().decode(MovieScreening.self, from: jsonData)
             self.movieTheaters += json.row
